@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="cat.copernic.finai.joel.joelpiqueras_app.FragmentA"
+        android:label="fragment_a3"
+        tools:layout="@layout/fragment_a3" >
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentC"
+            app:destination="@id/fragmentC" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="cat.copernic.finai.joel.joelpiqueras_app.FragmentB"
+        android:label="fragment_b2"
+        tools:layout="@layout/fragment_b2">
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentB3"
+            app:destination="@id/fragmentB3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="cat.copernic.finai.joel.joelpiqueras_app.FragmentC"
+        android:label="fragment_c2"
+        tools:layout="@layout/fragment_c2" >
+        <action
+            android:id="@+id/action_fragmentC_to_fragmentC3"
+            app:destination="@id/fragmentC3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB3"
+        android:name="cat.copernic.finai.joel.joelpiqueras_app.FragmentB3"
+        android:label="fragment_b3"
+        tools:layout="@layout/fragment_b3" />
+    <fragment
+        android:id="@+id/fragmentC3"
+        android:name="cat.copernic.finai.joel.joelpiqueras_app.FragmentC3"
+        android:label="fragment_c3"
+        tools:layout="@layout/fragment_c3" />
+</navigation>
